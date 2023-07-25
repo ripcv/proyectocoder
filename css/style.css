@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Nunito:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+/* css para todas las paginas */
+.header{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    flex-wrap:wrap ;
+    
+}
+
+h1,h2,h3{
+    font-family: 'New Rocker', cursive;
+}
+
+.logo img{
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+
+.nav-bar ul{
+    padding: 10px;
+    list-style: none;
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.nav-bar ul li{
+    display: flex;
+    padding: 5px 0px;
+   
+}
+
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.carrito{
+    display:flex;
+    margin-right: 10px;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.carrito a i{
+    font-size: 24px;
+}
+
+.carrito a{
+    color: white;
+    text-decoration: none;
+    margin : 5px;
+    font-size: 16px;
+}
+
+.slider{
+    height: 250px;
+    background-image: url(../multimedia/img/slider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.slider h1{
+    text-align: center;
+    font-style: italic;
+    text-shadow: rgba(83, 22, 88, 0.705) 0.1em 0.1em 0.2em;
+    padding-top: 100px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.main{
+    background-image: linear-gradient(rgb(109, 52, 114),rgb(45, 25, 49));
+    /* border: 30px solid;*/
+    padding: 20px;
+    margin-top: 129px;
+}
+
+.main section{
+    padding-bottom: 15px;
+}
+
+.main h1{
+    text-align: center;
+}
+
+
+.novedades{
+    padding: 20px;
+}
+.novedades h1,h2,h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 34px;
+    font-style: italic;
+    font-family: 'New Rocker', cursive;
+}
+
+.novedades p{
+    margin: 20px;
+    padding: 10px;
+}
+
+.cards {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap:wrap ;
+
+}
+
+.cards h2{
+    border-top: 1px black solid;
+    margin-top: 5px;
+    padding-top: 10px;
+    
+}
+
+.card{
+    width: 210px;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.card h5{
+    font-size: 20px;
+}
+
+.card p{
+    margin: 10px 0px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+
+.card button{
+    margin: 15px 0px;
+    background-color: purple;
+    color: white;
+    border: 1px;
+    border-radius: 10px;;
+    padding: 10px;
+    font-size: 16px;
+    position: absolute;
+    bottom: -35px;
+    right: 10px;
+}
+
+
+.boton{
+    margin: 15px 0px;
+    background-color: purple;
+    color: white;
+    border: 1px;
+    border-radius: 10px;;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.footer{
+    background-color: purple;
+    padding: 20px;
+}
+
+.footer-orden{
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.link-page ul{
+    padding-bottom: 10px;
+    list-style: none;    
+}
+
+.link-page ul li{
+    padding: 5px 0px;
+}
+.link-page ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.auspiciadores-equipo p{
+ padding: 5px 0px ;
+}
+
+.auspiciadores-equipo span{
+    font-weight: bold;
+}
+
+.social-media a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.fa-brands{
+    font-size: 36px;
+}
+
+/* Css especificos */
+.formulario{
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: rgb(7, 0, 7);
+    color: white;
+}
+
+.formulario div{
+    margin: 5px;
+    padding: 5px 0px;
+}
+.formulario input{
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.formulario textarea{
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 250px;
+    height: 150px;
+}
+
+.contacto{
+    width: 500px;
+}
+
+.videos{
+    margin: 20px;
+    padding: 10px;
+}
+.videos iframe{
+    width: 560px;
+    height: 315px; 
+}
+
+.bio{
+    width: 300px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.bio h1{
+    margin-bottom: 15px;;
+}
