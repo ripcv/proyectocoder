@@ -8,7 +8,6 @@
 }
 
 body{
-    min-height: 100vh;
     position: relative;
 }
 /* css para todas las paginas */
@@ -87,7 +86,10 @@ h1,h2,h3{
 
 .main{
     background-image: linear-gradient(rgb(109, 52, 114),rgb(45, 25, 49));
-    padding: 20px;
+    min-height: 88vh;
+    padding-bottom: 190px; /* Igual al alto del footer */
+    position: relative;    
+        
 }
 
 .main section{
@@ -173,6 +175,8 @@ h2{
     align-items: center;
     justify-content: space-around;
     position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .link-page{
