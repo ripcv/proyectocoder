@@ -7,9 +7,7 @@
     color: black;
 }
 
-body{
-    position: relative;
-}
+
 /* css para todas las paginas */
 .nav-bar{
     background-color: black;
@@ -47,6 +45,16 @@ body{
     text-shadow: 0px 10px 10px white;
 }
 
+.nav-bar .fa-bars{
+    display: none;
+}
+.logo img{
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    object-fit: cover;
+}
+
 .carrito{
     display:flex;
     margin-right: 10px;
@@ -69,26 +77,14 @@ body{
     font-size: 16px;
 }
 
-h1,h2,h3{
-    font-family: 'New Rocker', cursive;
-}
-.logo img{
-    width: 150px;
-    margin: 10px;
-    padding: 5px;
-    object-fit: cover;
-}
-
 .header{
-    margin-top: 120px;
+    margin-top: 110px;
 }
 
 
 .main{
     background-image: linear-gradient(rgb(109, 52, 114),rgb(45, 25, 49));
-    min-height: 88vh;
-    padding-bottom: 190px; /* Igual al alto del footer */
-    position: relative;    
+    min-height: 88vh; 
         
 }
 
@@ -96,11 +92,7 @@ h1,h2,h3{
     padding-bottom: 15px;
 }
 
-
-.novedades{
-    padding: 20px;
-}
-.novedades h1,h2,h3 {
+.titulo__formato{
     text-align: center;
     margin-bottom: 5px;
     font-size: 34px;
@@ -108,11 +100,15 @@ h1,h2,h3{
     font-family: 'New Rocker', cursive;
 }
 
+
+.novedades{
+    padding: 20px;
+}
+
 .novedades p{
     margin: 20px;
     padding: 10px;
 }
-
 
 .principal {
     display: flex;
@@ -155,7 +151,7 @@ h2{
     transition: transform 0.5s;
   }
   
-  .tarjeta:hover img {
+  .img-resaltada:hover img {
     width: 500px;
     height: 500px;
     position: fixed;
@@ -164,7 +160,6 @@ h2{
     transform: translate(-50%, -50%);
     z-index: 999;
  }
-  
 
 .footer{
     width: 100%;
@@ -174,9 +169,6 @@ h2{
     background-color: black;
     align-items: center;
     justify-content: space-around;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .link-page{
@@ -237,4 +229,61 @@ h2{
 }
 .copyright p{
     color: white;
+}
+
+/* CSS Responsive */
+
+@media(max-width: 768px){
+    .nav-bar .fa-bars {
+        display: block;
+        margin: 10px;
+        font-size: 30px;
+        color: white;
+        order: -1;
+    }
+
+    .nav-bar .fa-bars:hover + ul {
+        left: 0;
+    }
+
+    .nav-bar ul {
+        position: fixed;
+        top: 0px;
+        left: -300px;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    .nav-bar ul:hover{
+        left: 0;
+    }
+    .nav-bar ul li a{
+        color: rgba(0, 0, 0, 0.836);
+
+    }
+    .nav-bar ul li a:hover{
+        color: rgba(0, 0, 0);
+
+    }
+    .carrito {
+        display: none;
+    }
+    .tarjeta-container {
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+
+    .tarjeta {
+        width: calc(50% - 40px);
+        margin: 10px;
+    }
+
+    .img-resaltada:hover img {
+        width: 350px;
+        height: 400px;
+     }
 }
