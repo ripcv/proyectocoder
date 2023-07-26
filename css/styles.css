@@ -4,10 +4,70 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
 }
 /* css para todas las paginas */
-.header{
+.nav-bar{
     background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    flex-wrap:wrap ;
+}
+.nav-bar ul{
+    padding: 10px;
+    list-style: none;
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.nav-bar ul li{
+    display: flex;
+    padding: 5px 0px;
+   
+}
+
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.nav-bar ul li a:hover{
+    font-size: 18px;
+    text-shadow: 0px 10px 10px white;
+}
+
+.carrito{
+    display:flex;
+    margin-right: 10px;
+    font-size: 24px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.carrito i{
+    color: white;
+}
+.carrito a i{
+    font-size: 24px;
+}
+
+.carrito a{
+    color: white;
+    text-decoration: none;
+    margin : 5px;
+    font-size: 16px;
 }
 
 h1,h2,h3{
@@ -20,46 +80,13 @@ h1,h2,h3{
     object-fit: cover;
 }
 
-.nav-bar ul{
-    padding: 10px;
-    list-style: none;  
-}
-
-.nav-bar ul li{
-    padding: 5px 0px;
-}
-
-.nav-bar ul li a{
-    color: white;
-    text-decoration: none;
-}
-
-.carrito{
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-}
-
-.slider{
-    height: 250px;
-    background-image: url(../multimedia/img/slider.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.slider h1{
-    text-align: center;
-    font-style: italic;
-    text-shadow: rgba(83, 22, 88, 0.705) 0.1em 0.1em 0.2em;
-    padding-top: 100px;
-    font-family: 'Nunito', sans-serif;
+.header{
+    margin-top: 120px;
 }
 
 
 .main{
     background-image: linear-gradient(rgb(109, 52, 114),rgb(45, 25, 49));
-    /* border: 30px solid;*/
     padding: 20px;
 }
 
@@ -84,128 +111,126 @@ h1,h2,h3{
     padding: 10px;
 }
 
-.cards {
-    padding-left: 20px;
-    
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.cards h2{
-    border-top: 1px black solid;
-    margin-top: 5px;
-    padding-top: 10px;
-    
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-.card{
+h2{
+    text-shadow: 0px 1px 5px #FFFFFF;
+}
+
+.tarjeta-container{
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta {
     width: 210px;
     height: 210px;
-    border: 5px solid black;
-}
-
-.card img{
-    width: 200px;
-    height: 200px;
-}
-
-.boton{
-    margin: 15px 0px;
-    background-color: purple;
-    color: white;
-    border: 1px;
-    border-radius: 10px;;
-    padding: 10px;
-    font-size: 16px;
-}
+    margin: 20px;
+    position: relative;
+    overflow: hidden; 
+    transition: width 0.5s, height 0.5s;
+  }
+  
+  .tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid 5px black;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+  
+  .tarjeta:hover img {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+ }
+  
 
 .footer{
-    background-color: purple;
-    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
 }
 
-.footer-orden{
-    margin: 5px;
-    padding: 5px;
-}
-
-
-.link-page ul{
-    padding-bottom: 10px;
-    list-style: none;    
-}
-
-.link-page ul li{
-    padding: 5px 0px;
-}
-.link-page ul li a{
-    color: white;
-    text-decoration: none;
-}
-
-
-.auspiciadores-equipo p{
- padding: 5px 0px ;
-}
-
-.auspiciadores-equipo span{
-    font-weight: bold;
-}
-
-.social-media a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-.fa-brands{
-    font-size: 36px;
-}
-
-/* Css especificos */
-.formulario{
-    width: 300px;
+.link-page{
+    justify-content:  left;
+    color : white;
+    padding-top: 20px;
     margin: 10px;
-    padding: 5px;
-    border: 5px solid black;
-    border-radius: 15px;
-    background-color: rgb(7, 0, 7);
+
+}
+
+.link-page ul li a{
+    text-decoration: none;
     color: white;
 }
 
-.formulario div{
-    margin: 5px;
-    padding: 5px 0px;
-}
-.formulario input{
-    width: 250px;
-    height: 30px;
-    margin-top: 5px;
-    border-radius: 5px;
+.link-page ul li a:hover{
+    text-shadow: 0px 10px 10px white;
 }
 
-.formulario textarea{
-    margin-top: 5px;
-    border-radius: 5px;
-    width: 250px;
-    height: 150px;
+.auspiciadores-equipo{
+    padding-top: 20px;
+    margin: 10px;
 }
 
-.contacto{
-    width: 500px;
+.auspiciadores-equipo h4, ul li, ul li a{
+    color: white;
+    text-decoration: none;
 }
 
-.videos{
-    margin: 20px;
-    padding: 10px;
-}
-.videos iframe{
-    width: 560px;
-    height: 315px; 
+.auspiciadores-equipo ul li a:hover{
+    text-shadow: 0px 10px 10px white;
 }
 
-.bio{
-    width: 300px;
-    margin: 40px;
-    padding: 20px;
+
+.social-media{
+    padding-top: 20px;
+    margin: 10px;
+}
+.social-media h4{
+    color: white;
+}
+.social-media a, i {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
-.bio h1{
-    margin-bottom: 15px;;
+.social-media i:hover{
+    font-size: 40px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.212);
+}
+.copyright p{
+    color: white;
 }
