@@ -85,7 +85,8 @@
 .main{
     background-image: linear-gradient(rgb(109, 52, 114),rgb(45, 25, 49));
     min-height: 88vh; 
-        
+    display: flex;
+    flex-direction: column;
 }
 
 .main section{
@@ -103,11 +104,12 @@
 
 .novedades{
     padding: 20px;
+    text-align: center;
 }
 
 .novedades p{
     margin: 20px;
-    padding: 10px;
+    padding: 10px;  
 }
 
 .principal {
@@ -232,8 +234,7 @@ h2{
 }
 
 /* CSS Responsive */
-
-@media(max-width: 768px){
+@media(max-width: 1200px){
     .nav-bar .fa-bars {
         display: block;
         margin: 10px;
@@ -252,7 +253,7 @@ h2{
         left: -300px;
         width: 250px;
         height: 100vh;
-        background-color: white;
+        background-color: rgb(5, 5, 5);
         flex-direction: column;
         align-items: center;
         padding-top: 50px;
@@ -262,16 +263,20 @@ h2{
         left: 0;
     }
     .nav-bar ul li a{
-        color: rgba(0, 0, 0, 0.836);
-
-    }
-    .nav-bar ul li a:hover{
-        color: rgba(0, 0, 0);
+        color: rgba(255, 255, 255, 0.836);
 
     }
     .carrito {
         display: none;
     }
+
+    .header{
+        margin-top: 123px;
+    }
+    .h1-mobile h1{
+         font-size: 20px;
+     }
+ 
     .tarjeta-container {
         flex-wrap: wrap; 
         justify-content: space-between;
@@ -286,4 +291,11 @@ h2{
         width: 350px;
         height: 400px;
      }
+}
+
+@media(max-width: 557px){
+ .ocultar-botones .ocultar{
+    display: none;
+ }
+    
 }
