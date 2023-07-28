@@ -48,6 +48,9 @@
 .nav-bar .fa-bars{
     display: none;
 }
+.logo{
+    height: 122px;
+}
 .logo img{
     width: 150px;
     margin: 10px;
@@ -78,7 +81,7 @@
 }
 
 .header{
-    margin-top: 110px;
+    margin-top: 122px;
 }
 
 
@@ -99,6 +102,7 @@
     font-size: 34px;
     font-style: italic;
     font-family: 'New Rocker', cursive;
+    text-shadow: 0px 1px 5px #FFFFFF;
 }
 
 
@@ -124,10 +128,6 @@
     flex-direction: column;
     align-items: center;
     margin: 20px;
-}
-
-h2{
-    text-shadow: 0px 1px 5px #FFFFFF;
 }
 
 .tarjeta-container{
@@ -175,7 +175,7 @@ h2{
 
 .link-page{
     justify-content:  left;
-    color : white;
+    color : rgb(255, 255, 255);
     padding-top: 20px;
     margin: 10px;
 
@@ -233,6 +233,76 @@ h2{
     color: white;
 }
 
+/*Galeria con GRID */
+
+.galeria{
+    margin: 20px;
+    padding: 20px;
+}
+
+.galeria h1{
+    margin-bottom: 10px;
+}
+.grid-galeria{
+    display: grid;
+    margin: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,200px) ;
+    grid-template-areas: "img1  img2  img2  img3"
+                         "img5  img7  img7  img4"
+                         "img5  img7  img7  img8"
+                         "img6  img7  img7  img8"
+                         "img9  img9  img9  img8"
+                         "img10 img11 img11 img12" ;
+
+
+}
+.grid-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid black;
+}
+.img1{
+    grid-area: img1; 
+    
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
+
+
 /* CSS Responsive */
 @media(max-width: 1200px){
     .nav-bar .fa-bars {
@@ -271,7 +341,7 @@ h2{
     }
 
     .header{
-        margin-top: 123px;
+        margin-top: 122px;
     }
     .h1-mobile h1{
          font-size: 20px;
@@ -298,4 +368,10 @@ h2{
     display: none;
  }
     
+
+.grid-galeria img:hover {
+    width: 300px;
+    height: 400px;
+}
+
 }
