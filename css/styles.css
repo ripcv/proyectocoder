@@ -66,12 +66,6 @@
     margin-top: 5px;
 }
 
-.carrito i{
-    color: white;
-}
-.carrito a i{
-    font-size: 24px;
-}
 
 .carrito a{
     color: white;
@@ -108,12 +102,28 @@
 
 .novedades{
     padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .novedades p{
     margin: 20px;
     padding: 10px;  
+    font-size: 20px;
+    text-align: justify;
+}
+
+.novedades span{
+    font-weight: bold;
+}
+
+.slider h5{
+    font-size : 34px;
+    font-family: 'New Rocker', cursive;
+    text-shadow: 0px 0px 10px white;
 }
 
 .principal {
@@ -361,6 +371,9 @@
     font-size: 20px;
 }
 
+.salto_linea{
+    display: none;
+}
 
 /* CSS Responsive */
 @media(max-width: 1200px){
@@ -466,11 +479,54 @@
         justify-content: center;
     }
 
-    .tienda {
+    .tienda, .galeria{
         margin:20px 0px;;
     }
     
     .tarjetas{
         margin: 20px 0px;
     }
+
+    .salto_linea{
+        display:block;
+    }
+
+    .novedades p{
+        height: 200px;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+   
+    .nav-bar {
+        height: 90px;
+    }
+
+    .nav-bar .fa-bars{
+        position: relative; /* Agregar posición relativa */
+        top: -15px; /* Moverlo hacia abajo en un 50% de la altura del nav-bar */
+     }
+   
+    .nav-bar ul{
+        padding-top: 20px;
+    }
+
+    .nav-bar ul li{
+        height: 40px;
+        align-items: center;
+    }
+    
+    .header{
+        margin-top: 90px;
+    }
+    .novedades p{
+        height: 150px;
+        overflow: auto;
+    }
+
+    .logo img{
+        margin: 0px;
+    }
+
 }
