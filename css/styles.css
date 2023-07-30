@@ -101,7 +101,8 @@
 
 
 .novedades{
-    padding: 20px;
+    margin: 10px 170px;
+    padding: 20px 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -110,8 +111,8 @@
 }
 
 .novedades p{
-    margin: 20px;
-    padding: 10px;  
+    margin: 20px 50px;
+    padding: 10px 30px;  
     font-size: 20px;
     text-align: justify;
 }
@@ -440,6 +441,14 @@
      .producto p{
         font-size: 14px;
     }
+    .novedades{
+        margin: 0px;
+    }
+    .novedades p{
+        height: 200px;
+        overflow: auto;
+        margin: 0px;
+    }
 
 }
 @media(max-width: 768px){
@@ -491,10 +500,6 @@
         display:block;
     }
 
-    .novedades p{
-        height: 200px;
-        overflow: auto;
-    }
 }
 
 @media (max-width: 915px) and (orientation: landscape) {
