@@ -23,7 +23,15 @@
             <li> <a href="./index.html">Inicio</a></li>
             <li> <a href="./pages/conciertos.html">Conciertos</a></li>
             <li> <a href="./pages/discografia.html">Discografia</a></li>
-            <li> <a href="./pages/videos.html">Videos</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Multimedia
+                </a>
+                <div class="dropdown-menu bg" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./pages/galeria.html">Galeria</a>
+                  <a class="dropdown-item" href="./pages/videos.html">Videos</a>
+                </div>
+              </li>
             <li> <a href="./pages/tienda.html">Tienda</a></li>
             <li> <a href="./pages/login.html">Login</a></li>
         </ul>
@@ -32,6 +40,7 @@
         </div>
     </nav>
 
+    <!--Carrousel Bootstrap-->
     <header class="header">
         <div id="carouselExampleDark" class="carousel carousel-dark slide slider ocultar-botones" data-bs-ride="carousel">
             <div class="carousel-indicators ocultar">
