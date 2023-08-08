@@ -1,0 +1,69 @@
+
+/*Galeria con GRID */
+
+.galeria{
+    margin: 20px;
+    padding: 20px;
+    h1{
+        margin-bottom: 10px;
+    }
+}
+
+.grid-galeria{
+    display: grid;
+    margin: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,200px) ;
+    grid-template-areas: "img1  img2  img2  img3"
+                         "img5  img7  img7  img4"
+                         "img5  img7  img7  img8"
+                         "img6  img7  img7  img8"
+                         "img9  img9  img9  img8"
+                         "img10 img11 img11 img12" ;
+
+
+}
+.grid-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid black;
+}
+.img1{
+    grid-area: img1; 
+    
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
