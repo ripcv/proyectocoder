@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   color: black;
+  font-size: 20px;
 }
 
 /* Navegador y header */
@@ -87,13 +88,16 @@
   display: flex;
   flex-direction: column;
 }
+.main .contenido {
+  margin: 0px 450px;
+}
 .main section {
   padding-bottom: 15px;
 }
 
 .titulo__formato {
   text-align: center;
-  margin-bottom: 5px;
+  margin: 30px 0px;
   font-size: 34px;
   font-style: italic;
   font-family: "New Rocker", cursive;
@@ -101,8 +105,8 @@
 }
 
 .novedades {
-  margin: 10px 170px;
-  padding: 20px 30px;
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -110,16 +114,13 @@
   justify-content: center;
 }
 .novedades p {
-  margin: 20px 50px;
-  padding: 10px 30px;
-  font-size: 20px;
   text-align: justify;
 }
 .novedades span {
   font-weight: bold;
 }
 
-.slider h5 {
+.slider h2 {
   font-size: 34px;
   font-family: "New Rocker", cursive;
   text-shadow: 0px 0px 10px white;
@@ -138,10 +139,18 @@
   align-items: center;
   margin: 20px;
 }
-
-.tarjeta-container {
+.tarjetas .tarjeta-container {
   display: flex;
   align-items: center;
+}
+.tarjetas .tarjeta-container .img-resaltada:hover img {
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
 }
 
 .tarjeta {
@@ -164,16 +173,6 @@
   transition: transform 0.5s;
 }
 
-.img-resaltada:hover img {
-  width: 500px;
-  height: 500px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-}
-
 /* Footer */
 .footer {
   width: 100%;
@@ -184,68 +183,71 @@
   align-items: center;
   justify-content: space-around;
 }
-
-.link-page {
+.footer .link-page {
   justify-content: left;
   color: rgb(255, 255, 255);
   padding-top: 20px;
   margin: 10px;
 }
-.link-page ul li a {
+.footer .link-page ul {
+  list-style: none;
+}
+.footer .link-page ul li a {
   text-decoration: none;
   color: white;
 }
-.link-page ul li a:hover {
+.footer .link-page ul li a:hover {
   text-shadow: 0px 10px 10px white;
 }
-
-.auspiciadores-equipo {
+.footer .auspiciadores-equipo {
   padding-top: 20px;
   margin: 10px;
 }
-.auspiciadores-equipo h4, .auspiciadores-equipo ul li, .auspiciadores-equipo ul li a {
+.footer .auspiciadores-equipo h4 {
   color: white;
   text-decoration: none;
 }
-
-.auspiciadores-equipo ul li a:hover {
+.footer .auspiciadores-equipo ul {
+  list-style: none;
+}
+.footer .auspiciadores-equipo ul li, .footer .auspiciadores-equipo ul a {
+  color: white;
+  text-decoration: none;
+}
+.footer .auspiciadores-equipo ul li a:hover {
   text-shadow: 0px 10px 10px white;
 }
-
-.social-media {
+.footer .social-media {
   padding-top: 20px;
   margin: 10px;
 }
-.social-media h4 {
+.footer .social-media h4 {
   color: white;
 }
-.social-media a, .social-media i {
+.footer .social-media a, .footer .social-media i {
   font-size: 30px;
   color: white;
   text-decoration: none;
 }
-.social-media i:hover {
+.footer .social-media i:hover {
   font-size: 40px;
 }
-
-.copyright {
+.footer .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 25px;
   border-top: 1px solid rgba(255, 255, 255, 0.212);
 }
-.copyright p {
+.footer .copyright p {
   color: white;
+  margin-bottom: 0px;
 }
 
 /*Galeria con GRID */
 .galeria {
-  margin: 20px;
-  padding: 20px;
-}
-.galeria h1 {
-  margin-bottom: 10px;
+  margin: 0px 20px;
+  padding: 0px 10px;
 }
 
 .grid-galeria {
@@ -314,13 +316,9 @@
 
 /* Tienda */
 .tienda {
-  margin: 40px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
-.tienda h1 {
-  margin: 20px;
 }
 
 .producto {
@@ -338,12 +336,12 @@
   justify-content: space-around;
   background-color: rgb(133, 54, 133);
 }
-.producto img {
+.producto .tarjeta img {
   max-width: 100%;
   height: 200px;
   border: none;
 }
-.producto img:hover {
+.producto .tarjeta img:hover {
   position: absolute;
   top: 0;
   right: 0;
@@ -353,14 +351,14 @@
   object-fit: contain;
   background-color: white;
 }
-.producto h5 {
+.producto .tarjeta h5 {
   text-align: center;
   margin-top: 5px;
   font-weight: bold;
 }
-.producto p {
+.producto .tarjeta p {
   padding: 0px 10px;
-  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .salto_linea {
@@ -368,7 +366,18 @@
 }
 
 /* CSS Responsive */
+@media (min-width: 1201px) and (max-width: 1800px) {
+  .main .contenido {
+    margin: 0px 2vw;
+  }
+  .novedades p {
+    padding: 0px 8vw;
+  }
+}
 @media (max-width: 1200px) {
+  .main .contenido {
+    margin: 0px 4vw;
+  }
   .nav-bar .fa-bars {
     display: block;
     margin: 10px;
@@ -403,9 +412,6 @@
   .header {
     margin-top: 122px;
   }
-  .h1-mobile h1 {
-    font-size: 20px;
-  }
   .tarjeta-container {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -431,6 +437,13 @@
     height: 200px;
     overflow: auto;
     margin: 0px;
+    padding: 20px;
+  }
+  .slider p {
+    display: none;
+  }
+  .slider h1, .slider h5 {
+    font-size: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -479,8 +492,8 @@
     height: 90px;
   }
   .nav-bar .fa-bars {
-    position: relative; /* Agregar posición relativa */
-    top: -15px; /* Moverlo hacia abajo en un 50% de la altura del nav-bar */
+    position: relative;
+    top: -15px;
   }
   .nav-bar ul {
     padding-top: 20px;
@@ -498,6 +511,194 @@
   }
   .logo img {
     margin: 0px;
+  }
+}
+/* Biografia */
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 10px;
+  padding: 0px 20px;
+}
+.bio .titulo__formato {
+  margin-bottom: 10px;
+}
+.bio .bio-cont {
+  margin: 0px 100px;
+  padding: 0px 50px;
+}
+.bio .bio-cont p {
+  margin: 50px;
+  text-align: justify;
+}
+.bio .bio-cont .img-izquierda {
+  float: left;
+  width: 350px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.bio .bio-cont .img-derecha {
+  float: right;
+  width: 450px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+@media (max-width: 557px), (max-width: 768px), (max-width: 915px) and (orientation: landscape) {
+  .bio .bio-cont {
+    margin: 0px 10px;
+    padding: 0;
+  }
+  .bio .bio-cont .img-izquierda, .bio .bio-cont .img-derecha {
+    float: none;
+    width: 300px;
+    margin: 10px;
+  }
+  .bio .bio-cont p {
+    margin: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .bio .bio-cont {
+    margin: 0px 10px;
+    padding: 0;
+  }
+  .bio .bio-cont p {
+    margin: 10px;
+  }
+}
+
+/** Termino y condiciones **/
+.terminos_condiciones {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+.terminos_condiciones span {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/** Pagina de Contacto **/
+.contacto span {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+.contacto .formulario {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #636060;
+  border-radius: 5px;
+}
+.contacto .formulario .formulario__nombre,
+.contacto .formulario .formulario__apellido,
+.contacto .formulario .formulario__correo,
+.contacto .formulario .formulario__mensaje,
+.contacto .formulario .formulario__boton,
+.contacto .formulario .formulario__password {
+  margin-bottom: 20px;
+}
+.contacto .formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.contacto .formulario input,
+.contacto .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #666161;
+  border-radius: 5px;
+}
+.contacto .formulario .formulario__boton {
+  display: flex;
+  justify-content: space-between;
+}
+.contacto .formulario .formulario__boton .boton {
+  padding: 10px 20px;
+  background-color: #9d44a5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contacto .formulario .formulario__boton .boton:hover {
+  background-color: #590261;
+}
+.contacto .formulario .formulario__boton .boton:last-child {
+  background-color: #cac3c3;
+  color: #000;
+  margin-left: 10px;
+}
+.contacto .formulario .formulario__boton .boton:last-child:hover {
+  background-color: #999999;
+}
+
+/** Conciertos **/
+/* Variables */
+/*Mixins*/
+.conciertos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.conciertos .concierto img {
+  width: 650px;
+  margin-top: 30px;
+  object-fit: cover;
+}
+.conciertos .listaconciertos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.conciertos .listaconciertos .proximo-evento__siguiente {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.conciertos .listaconciertos .proximo-evento__siguiente:hover {
+  background-color: rgba(80, 39, 80, 0.534);
+  border-radius: 5px;
+}
+.conciertos .listaconciertos .boton_evento {
+  text-align: right;
+}
+.conciertos .listaconciertos .boton_evento button {
+  background-color: #9d44a5;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.conciertos .listaconciertos .boton_evento button:hover {
+  background-color: #590261;
+}
+.conciertos .listaconciertos .fecha-evento,
+.conciertos .listaconciertos .lugar-evento,
+.conciertos .listaconciertos .region-evento,
+.conciertos .listaconciertos .boton_evento {
+  flex: 1;
+}
+@media (max-width: 557px) {
+  .conciertos .concierto img {
+    width: 100%;
+  }
+  .conciertos .proximo-evento__siguiente {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  .conciertos .proximo-evento__siguiente .boton_evento {
+    margin-top: 10px; /* Agrega espacio entre el contenido y el botón */
+    margin-left: 0; /* Restaura el margen izquierdo */
   }
 }
 

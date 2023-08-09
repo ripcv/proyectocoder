@@ -1,0 +1,70 @@
+/** Pagina de Contacto **/
+
+.contacto{
+    span {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+
+        }
+        .formulario {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #636060;
+            border-radius: 5px;
+          
+            .formulario__nombre,
+            .formulario__apellido,
+            .formulario__correo,
+            .formulario__mensaje,
+            .formulario__boton,
+            .formulario__password {
+              margin-bottom: 20px;
+            }
+          
+            label {
+              display: block;
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+          
+            input,
+            textarea {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #666161;
+              border-radius: 5px;
+            }
+          
+            .formulario__boton {
+              display: flex;
+              justify-content: space-between;
+          
+              .boton {
+                padding: 10px 20px;
+                background-color: #9d44a5;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+          
+                &:hover {
+                  background-color: #590261;
+                }
+          
+                &:last-child {
+                  background-color: #cac3c3;
+                  color: #000;
+                  margin-left: 10px;
+          
+                  &:hover {
+                    background-color: #999999;
+                  }
+                }
+              }
+            }
+          }
+
+}

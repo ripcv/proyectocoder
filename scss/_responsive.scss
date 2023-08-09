@@ -1,6 +1,24 @@
 
 /* CSS Responsive */
-@media(max-width: 1200px){
+
+@media(min-width: 1201px) and (max-width: 1800px){
+    .main {
+        .contenido{
+            margin: 0px 2vw; 
+        }
+    }
+    .novedades p{
+        padding: 0px 8vw;
+    }
+
+}
+@media(max-width: 1200px) {
+    .main {
+        .contenido{
+            margin: 0px 4vw;
+        }
+    }
+
     .nav-bar .fa-bars {
         display: block;
         margin: 10px;
@@ -39,10 +57,6 @@
     .header{
         margin-top: 122px;
     }
-    .h1-mobile h1{
-         font-size: 20px;
-     }
- 
     .tarjeta-container {
         flex-wrap: wrap; 
         justify-content: space-between;
@@ -71,10 +85,20 @@
         height: 200px;
         overflow: auto;
         margin: 0px;
+        padding: 20px;
+    }
+    .slider{
+        p {
+            display: none;
+        }
+        h1,h5 {
+            font-size: 30px;
+        }
     }
 
 }
 @media(max-width: 768px){
+    
     .producto .tarjeta{
         flex: 0 0 calc(50% - 30px);
     }
@@ -89,10 +113,12 @@
     .tienda .tarjetas{
         margin: 20px 0px;
     }
+    
 
 }
 
 @media(max-width: 557px){
+    
     .ocultar-botones .ocultar{
         display: none;
     }
@@ -132,8 +158,8 @@
     }
 
     .nav-bar .fa-bars{
-        position: relative; /* Agregar posición relativa */
-        top: -15px; /* Moverlo hacia abajo en un 50% de la altura del nav-bar */
+        position: relative; 
+        top: -15px; 
      }
    
     .nav-bar ul{

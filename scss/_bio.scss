@@ -1,0 +1,59 @@
+/* Biografia */
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin : 0px 10px;
+    padding: 0px 20px;
+    .titulo__formato{
+        margin-bottom: 10px;
+    }
+    .bio-cont{
+        
+        margin: 0px 100px;
+        padding: 0px 50px;
+        p{
+            margin: 50px;
+            text-align: justify;
+        }
+        
+        .img-izquierda{
+            float: left;
+            width: 350px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        .img-derecha{
+            float: right;
+            width: 450px;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+    }
+    
+    @media (max-width: 557px), (max-width: 768px), (max-width: 915px) and (orientation: landscape) {
+        .bio-cont {
+            margin: 0px 10px;
+            padding: 0;
+            .img-izquierda, .img-derecha {
+                float: none;
+                width: 300px;
+                margin: 10px;
+            }
+            p {
+                margin: 0px;
+            }
+        }
+        
+    }
+    @media(max-width: 1200px){
+        .bio-cont {
+            margin: 0px 10px;
+            padding: 0;
+            p {
+                margin: 10px;
+            }
+        }
+    }
+}

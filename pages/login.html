@@ -44,9 +44,27 @@
     <header class="header">    
     
     </header>
-
+    <!--Contenido-->
     <main class="main">
-        <h1 class="titulo__formato">Login</h1>
+        <section class="contenido">
+           <div class="contacto">
+                <h1 class="titulo__formato">Login</h1>
+                <form class="formulario" method="get" action="./tienda.html">
+                    <div class="formulario__correo">
+                        <label for="correo">Correo electronico:</label>
+                        <input type="text" name="correo" id="correo" placeholder="Ingrese su  Correo" required>
+                    </div>
+                    <div class="formulario__password">
+                        <label for="password">Ingrese su clave:</label>
+                        <input type="password" name="password" id="password" placeholder="Ingrese su  Clave" required>
+                    </div>
+                    <div class="formulario__boton">
+                        <button class="boton" type="submit">Entrar</button>
+                        <button class="boton" type="reset">Borrar</button>
+                    </div>
+                </form>
+           </div>
+        </section>
     </main>
 
      <!-- Footer-->

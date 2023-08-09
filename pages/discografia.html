@@ -14,31 +14,41 @@
 </head>
 <body>
   <!-- Menu-->
-  <nav class="nav-bar">
-    <div class="logo">
-        <a href="../index.html">
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="../index.html">
                 <img src="../multimedia/img/logo.png" alt="logo">
             </a>
-    </div>
-    <i class="fa-solid fa-bars"></i>
-    <ul>
-        <li> <a href="../index.html">Inicio</a></li>
-        <li> <a href="./conciertos.html">Conciertos</a></li>
-        <li> <a href="./discografia.html">Discografia</a></li>
-        <li> <a href="./videos.html">Videos</a></li>
-        <li> <a href="./tienda.html">Tienda</a></li>
-        <li> <a href="./login.html">Login</a></li>
-    </ul>
-    <div class="carrito">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-    </div>
-</nav>       
+        </div>
+        <i class="fa-solid fa-bars"></i>
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="./conciertos.html">Conciertos</a></li>
+            <li> <a href="./discografia.html">Discografia</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Multimedia
+                </a>
+                <div class="dropdown-menu bg" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./galeria.html">Galeria</a>
+                <a class="dropdown-item" href="./videos.html">Videos</a>
+                </div>
+            </li>
+            <li> <a href="./tienda.html">Tienda</a></li>
+            <li> <a href="./login.html">Login</a></li>
+        </ul>
+        <div class="carrito">
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        </div>
+    </nav>         
     <header class="header">    
-    
-    </header>
 
+    </header>
+    <!--Contenido principal-->
     <main class="main">
-        <h1 class="titulo__formato">Discografia</h1>
+        <section class="contenido">
+            <h1 class="titulo__formato">Discografia</h1>
+        </section>
     </main>
 
      <!-- Footer-->

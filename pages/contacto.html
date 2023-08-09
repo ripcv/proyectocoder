@@ -46,33 +46,44 @@
     </header>
 
     <main class="main">
-        <div class="contacto">
-            <h1 class="titulo__formato">Contacto</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quo voluptatem. Est at laboriosam veniam nulla atque nisi dolorem doloribus aspernatur eligendi veritatis sint porro, praesentium odit tempore nobis assumenda!
-            A voluptas amet sequi earum aliquid atque dolores reiciendis deleniti iure suscipit tenetur adipisci quod magni ratione laudantium obcaecati quibusdam eveniet enim, vel at perferendis dicta ad.</p>
-            <form class="formulario">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
-                </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
-                </div>
-                <div>
-                    <label for="correo">Correo electronico:</label>
-                    <input type="text" name="correo" id="correo" placeholder="Ingrese su  Correo" required>
-                </div>
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" placeholder="Ingrese Mensaje" required></textarea>
-                </div>
-                <div>
-                    <button class="boton" type="submit">Enviar</button>
-                    <button class="boton" type="reset">Borrar</button>
-                </div>
-            </form>
-        </div>
+        <section class="contenido">
+            <div class="contacto">
+                <h1 class="titulo__formato">Contacto</h1>
+                <p>¡Gracias por querer ponerte en contacto con nosotros! Tu opinión, preguntas y comentarios son muy importantes para nosotros. Por favor, utiliza la siguiente información de contacto o el formulario para comunicarte con nuestro equipo.
+                    <span>Información de Contacto</span> 
+                    <span> Dirección:</span> Calle Napoleón 123, Ciudad Imperial, Código Postal 12345.
+                    <span>Teléfono: </span> +123 456 789
+                    <span>Correo Electrónico:</span> info@lagrandearmee.com
+                </p>
+                <p>
+                    Si prefieres enviarnos un mensaje directamente, por favor utiliza el siguiente formulario. Nos esforzamos por responder a todos los mensajes en un plazo de 1-2 días hábiles.
+                </p>
+                
+                
+                <form class="formulario">
+                    <div class="formulario__nombre">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="formulario__apellido">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+                    </div>
+                    <div class="formulario__correo">
+                        <label for="correo">Correo electronico:</label>
+                        <input type="text" name="correo" id="correo" placeholder="Ingrese su  Correo" required>
+                    </div>
+                    <div class="formulario__mensaje">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Ingrese Mensaje" required></textarea>
+                    </div>
+                    <div class="formulario__boton">
+                        <button class="boton" type="submit">Enviar</button>
+                        <button class="boton" type="reset">Borrar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
    
     </main>
 

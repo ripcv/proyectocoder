@@ -1,0 +1,75 @@
+/** Conciertos **/
+@import "_config";
+
+.conciertos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .concierto{
+        img{
+            width: 650px;
+            margin-top: 30px;
+            object-fit: cover;
+        }
+
+    }
+    .listaconciertos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 40px;
+        .proximo-evento__siguiente {
+            display: flex;
+            padding: 10px;
+            border-bottom: 1px solid #ccc; 
+            &:hover{
+                background-color: rgba(80, 39, 80, 0.534);
+                border-radius: 5px;
+            }
+           
+        }
+        .boton_evento {
+            text-align: right;
+            button {
+                background-color: #9d44a5;
+                color: white;
+                border:none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                &:hover {
+                    background-color: #590261;
+                  }
+            }
+        }
+
+        .fecha-evento,
+        .lugar-evento,
+        .region-evento,
+        .boton_evento {
+            flex: 1;
+        }
+    }
+    @media (max-width: $breakpoint-extra-small) {
+        .concierto{
+            img{
+                width: 100%;
+            }
+    
+        }
+        .proximo-evento__siguiente {
+            flex-direction: column;
+            align-items: center; 
+            text-align: center;
+            margin-left: 0;
+            .boton_evento {
+                margin-top: 10px; /* Agrega espacio entre el contenido y el botón */
+                margin-left: 0; /* Restaura el margen izquierdo */
+            }
+         }
+    }
+    
+       
+
+ }
