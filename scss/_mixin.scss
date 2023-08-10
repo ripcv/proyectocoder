@@ -1,0 +1,10 @@
+@mixin  boton-armee ($bg,$color,$bg-hover){
+        background-color: $bg;
+        color: $color;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        &:hover {
+            background-color: $bg-hover
+        }
+    }

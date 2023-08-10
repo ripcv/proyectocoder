@@ -1,4 +1,4 @@
-/** Pagina de Contacto **/
+/**  Contacto y Login**/
 
 .contacto{
     span {
@@ -11,7 +11,8 @@
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
-            border: 1px solid #636060;
+            border: 1px solid #000000;
+            background-color: $bg;
             border-radius: 5px;
           
             .formulario__nombre,
