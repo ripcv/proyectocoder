@@ -1,0 +1,13 @@
+/** Videos **/
+
+.videos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    iframe{
+        width: 550px;
+        height: 600px;
+    }
+}

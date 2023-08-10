@@ -10,6 +10,8 @@
   font-size: 20px;
 }
 
+/* Variables */
+/*Mixins*/
 /* Navegador y header */
 .nav-bar {
   background-color: black;
@@ -638,8 +640,6 @@
 }
 
 /** Conciertos **/
-/* Variables */
-/*Mixins*/
 .conciertos {
   display: flex;
   flex-direction: column;
@@ -682,8 +682,7 @@
 }
 .conciertos .listaconciertos .fecha-evento,
 .conciertos .listaconciertos .lugar-evento,
-.conciertos .listaconciertos .region-evento,
-.conciertos .listaconciertos .boton_evento {
+.conciertos .listaconciertos .region-evento {
   flex: 1;
 }
 @media (max-width: 557px) {
@@ -700,6 +699,47 @@
     margin-top: 10px; /* Agrega espacio entre el contenido y el botón */
     margin-left: 0; /* Restaura el margen izquierdo */
   }
+}
+
+.discografia {
+  display: flex;
+  flex-direction: column;
+}
+.discografia .discografia__detalle {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.discografia .discografia__detalle img {
+  width: 400px;
+  height: 400px;
+  align-items: center;
+}
+.discografia .discografia__detalle ul {
+  list-style: none;
+}
+@media (max-width: 1200px) {
+  .discografia .discografia__detalle {
+    flex-direction: column;
+    text-align: center;
+  }
+  .discografia .discografia__detalle ul {
+    text-align: left;
+  }
+}
+
+/** Videos **/
+.videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.videos iframe {
+  width: 550px;
+  height: 600px;
 }
 
 /*# sourceMappingURL=styles.css.map */
