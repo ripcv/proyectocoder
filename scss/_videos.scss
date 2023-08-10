@@ -10,4 +10,11 @@
         width: 550px;
         height: 600px;
     }
+
+    @media(max-width: $breakpoint-small){
+        
+            iframe{
+               height: 250px;
+            }
+    }
 }
