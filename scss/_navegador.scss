@@ -1,4 +1,4 @@
-/* Navegador y header */
+/** Navegador y Header **/
 
 .nav-bar{
     background-color: black;
@@ -39,33 +39,87 @@
     .fa-bars{
         display: none;
     }
-}
-
-.logo{
-    height: 122px;
-    img{
-        width: 150px;
-        margin: 10px;
-        padding: 5px;
-        object-fit: cover;
+    .logo{
+        height: 122px;
+        img{
+            width: 150px;
+            margin: 10px;
+            padding: 5px;
+            object-fit: cover;
+        }
     }
-}
 
-.carrito{
-    display:flex;
-    margin-right: 10px;
-    font-size: 24px;
-    padding: 5px;
-    margin-top: 5px;
-    align-items: center;
-    a , i{
-        color: white;
-        text-decoration: none;
-        margin : 5px;
+    .carrito{
+        display:flex;
+        margin-right: 10px;
         font-size: 24px;
+        padding: 5px;
+        margin-top: 5px;
+        align-items: center;
+        a , i{
+            color: white;
+            text-decoration: none;
+            margin : 5px;
+            font-size: 24px;
+        }
+    }  
+
+    @media(max-width: $breakpoint-medium) {
+        .fa-bars {
+            display: block;
+            margin: 10px;
+            font-size: 30px;
+            color: white;
+            order: -1;
+            &:hover + ul{
+                left: 0;
+            }
+        }
+        ul {
+            position: fixed;
+            top: 0px;
+            left: -300px;
+            width: 250px;
+            height: 100vh;
+            background-color: rgb(5, 5, 5);
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            transition: 0.5s;
+            &:hover{
+                left: 0;
+            }
+            li a{
+                color: rgba(255, 255, 255, 0.836);
+        
+            }
+        }
+        .carrito {
+            display: none;
+        }
     }
+
+    @media (max-width: $breakpoint-landscape) and (orientation: landscape) {
+    
+            height: 90px;
+            .fa-bars{
+            position: relative; 
+            top: -15px; 
+            ul{
+                padding-top: 20px;
+                li{
+                    height: 40px;
+                    align-items: center;
+                }
+            }
+            .logo img{
+                margin: 0px;
+            }
+        }
 }
 
-.header{
-    margin-top: 122px;
 }
+
+/** Fin Navegador y Header **/
+
+
