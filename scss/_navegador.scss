@@ -91,12 +91,28 @@
             }
             li a{
                 color: rgba(255, 255, 255, 0.836);
-        
             }
+            
+                
+            .dropdown-menu{
+                a::before {
+                    content: '';
+                    display: inline-block;
+                    width: 10px; 
+                    height: 10px; 
+                    border-top: 2px solid rgb(255, 255, 255);
+                    margin-right: 10px; 
+                  }                  
+                  
+            }
+            
+            
+            
         }
         .carrito {
             display: none;
         }
+
     }
 
     @media (max-width: $breakpoint-landscape) and (orientation: landscape) {
