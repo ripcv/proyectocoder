@@ -11,14 +11,14 @@
     display: grid;
     margin: 10px;
     gap: 10px;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(6,200px) ;
-    grid-template-areas: "img1  img2  img2  img3"
-                         "img5  img7  img7  img4"
-                         "img5  img7  img7  img8"
-                         "img6  img7  img7  img8"
-                         "img9  img9  img9  img8"
-                         "img10 img11 img11 img12" ;
+    grid-template-areas: "img1  img2  img3"
+                         "img5  img7  img3"
+                         "img5  img7  img4"
+                         "img10  img6  img8"
+                         "img9  img6  img8"
+                         "img9 img11 img12" ;
 
 
 }
