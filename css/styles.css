@@ -396,12 +396,18 @@
   grid-template-rows: repeat(6, 200px);
   grid-template-areas: "img1  img2  img3" "img5  img7  img3" "img5  img7  img4" "img10  img6  img8" "img9  img6  img8" "img9 img11 img12";
 }
-
 .grid-galeria img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: 5px solid black;
+}
+@media (max-width: 768px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img1" "img2" "img3" "img5" "img7" "img4" "img10" "img6" "img8" "img9" "img11" "img12";
+  }
 }
 
 .img1 {

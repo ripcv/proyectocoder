@@ -19,15 +19,30 @@
                          "img10  img6  img8"
                          "img9  img6  img8"
                          "img9 img11 img12" ;
-
-
-}
-.grid-galeria img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: $borde;
-
+                         img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border: $borde;
+                        
+                        }
+                        @media (max-width: $breakpoint-small) {
+                            grid-template-columns: 1fr;
+                            grid-template-rows: auto;
+                            grid-template-areas:   "img1"
+                                                    "img2"
+                                                    "img3"
+                                                    "img5"
+                                                    "img7"
+                                                    "img4"
+                                                    "img10"
+                                                    "img6"
+                                                    "img8"
+                                                    "img9"
+                                                    "img11"
+                                                    "img12";
+                            
+                        }                    
 }
 
 @for $i from 1 to 13{
